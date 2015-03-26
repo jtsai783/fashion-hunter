@@ -1,0 +1,97 @@
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<script>
+
+$(function(){
+	headCounter = 0;
+	legsCounter = 0;
+	armsCounter = 0;
+	bodyCounter = 0;
+	waistCounter = 0;
+	
+
+	$("button.head").click(function(){
+	    headCounter = headCounter + 1;
+	    src = "Head/" + headCounter + ".png";
+	    $('img.head').attr("src", src);
+	});
+
+	$("button.legs").click(function(){
+	    legsCounter = legsCounter + 1;
+	    src = "Legs/" + legsCounter + ".png";
+	    $('img.legs').attr("src", src);
+	});
+
+	$("button.arms").click(function(){
+	    armsCounter = armsCounter + 1;
+	    src = "Arms/" + armsCounter + ".png";
+	    $('img.arms').attr("src", src);
+	});
+
+	$("button.body").click(function(){
+	    bodyCounter = bodyCounter + 1;
+	    src = "Body/" + bodyCounter + ".png";
+	    $('img.body').attr("src", src);
+	});
+
+	$("button.waist").click(function(){
+	    waistCounter = waistCounter + 1;
+	    src = "Waist/" + waistCounter + ".png";
+	    $('img.waist').attr("src", src);
+	});
+
+	$("button.head_b").click(function(){
+	    headCounter = headCounter - 1;
+	    src = "Head/" + headCounter + ".png";
+	    $('img.head').attr("src", src);
+	});
+
+	$("button.legs_b").click(function(){
+	    legsCounter = legsCounter - 1;
+	    src = "Legs/" + legsCounter + ".png";
+	    $('img.legs').attr("src", src);
+	});
+
+	$("button.arms_b").click(function(){
+	    armsCounter = armsCounter - 1;
+	    src = "Arms/" + armsCounter + ".png";
+	    $('img.arms').attr("src", src);
+	});
+
+	$("button.body_b").click(function(){
+	    bodyCounter = bodyCounter - 1;
+	    src = "Body/" + bodyCounter + ".png";
+	    $('img.body').attr("src", src);
+	});
+
+	$("button.waist_b").click(function(){
+	    waistCounter = waistCounter - 1;
+	    src = "Waist/" + waistCounter + ".png";
+	    $('img.waist').attr("src", src);
+	});
+});
+</script>
+
+<button class="head" type="button">head</button>
+<button class="arms" type="button">arms</button>
+<button class="body" type="button">body</button>
+<button class="legs" type="button">legs</button>
+<button class="waist" type="button">waist</button>
+
+<button class="head_b" type="button">head</button>
+<button class="arms_b" type="button">arms</button>
+<button class="body_b" type="button">body</button>
+<button class="legs_b" type="button">legs</button>
+<button class="waist_b" type="button">waist</button>
+
+<div style="position:relative">
+    <img class="base"src="0.png" style="position:absolute;"/>
+    <img class="body" src="" style="position:absolute;"/>
+    <img class="head" src="" style="position:absolute;"/>
+    <img class="legs" src="" style="position:absolute;"/>
+    <img class="waist" src="" style="position:absolute;"/>
+    <img class="arms" src="" style="position:absolute;"/>
+</div>
+
