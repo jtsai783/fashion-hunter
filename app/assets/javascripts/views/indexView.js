@@ -8,7 +8,7 @@ FashionHunter.Views.IndexView = Backbone.View.extend({
 	navigate: function(event){
 		var pos = $(event.currentTarget).data('position');
 		var dir = $(event.currentTarget).data('direction');
-		var root_src = "/assets/mh_images/Female/" + pos + "/"
+		var root_src = "/mh_images/Female/" + pos + "/"
 		var el = "img." + pos
 		attr = $(el).data('index');
 		attr = attr + dir;
