@@ -47,3 +47,5 @@ end
 gem 'backbone-on-rails'
 gem 'bootstrap-sass'
 gem 'annotate'
+
+gem 'rails_12factor', group: :production
